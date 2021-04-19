@@ -2,15 +2,15 @@ import math
 
 def divisores(n):
     resultado = []	
-    for i in range(1, int(math.sqrt(n) + 1)):		
-        if (n % i == 0):			
-            if (n / i == i):
+    for i in range(1, int(math.sqrt(n) + 1)):
+        if(n % i == 0):
+            if(n / i == i):
                 resultado.append(i)
             else:
                 resultado.append(i)
                 resultado.append(int(n / i))
     return resultado;
-		
+
 def mcd(x, y):
     while(y):
         x, y = y, x % y
